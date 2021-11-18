@@ -16,6 +16,10 @@ describe("Leap Year", () => {
   it("should return true for 2000", () => {
     expect(leapYear(2000)).toBe(true);
   });
+
+  it("should throw exception for NaN", () => {
+    expect(() => leapYear(NaN)).toThrowError(/^input is not a number!$/);
+  });
 });
 
 /*
