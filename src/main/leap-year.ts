@@ -1,3 +1,9 @@
-export const leapYear = (year: number): any => {
-  if (year % 4 === 0) return true;
+export const leapYear = (year: number): boolean => {
+  if (
+    (year % 4 === 0 && year % 100 != 0) ||
+    (year % 4 === 0 && year % 100 === 0 && year % 400 === 0)
+  ) {
+    return true;
+  }
+  return false;
 };

@@ -4,6 +4,18 @@ describe("Leap Year", () => {
   it("should return true for 1996", () => {
     expect(leapYear(1996)).toBe(true);
   });
+
+  it("should return false for 2001", () => {
+    expect(leapYear(2001)).toBe(false);
+  });
+
+  it("should return false for 1900", () => {
+    expect(leapYear(1900)).toBe(false);
+  });
+
+  it("should return true for 2000", () => {
+    expect(leapYear(2000)).toBe(true);
+  });
 });
 
 /*
